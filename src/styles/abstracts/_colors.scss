@@ -1,0 +1,44 @@
+$colors: (
+  primary: (
+    main: #725cff,
+    darker: #4f2dd3,
+    lighter: #9a8aff,
+    subtle: #d2cbff,
+  ),
+  red: (
+    200: #ff8080,
+    400: #ff5c5c,
+    600: #ff3b3b,
+    800: #e53535,
+  ),
+  warning: (
+    200: #fded72,
+    400: #fddd48,
+    600: #ffcc00,
+    800: #e5b800,
+  ),
+  info: (
+    200: #9dbff9,
+    400: #5b8def,
+    600: #0063f7,
+    800: #004fc4,
+  ),
+  success: (
+    200: #57eba1,
+    400: #39d98a,
+    600: #06c270,
+    800: #05a660,
+  ),
+  dark: (
+    200: #b9b9b9,
+    400: #858585,
+    600: #515151,
+    800: #2d2d2d,
+  ),
+  light: (
+    200: #fafafc,
+    400: #f2f2f5,
+    600: #ebebf0,
+    800: #dde5e9,
+  ),
+);
