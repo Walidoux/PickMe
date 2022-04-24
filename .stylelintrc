@@ -1,0 +1,22 @@
+{
+  "plugins": ["stylelint-scss", "stylelint-color-format"],
+  "extends": [
+    "stylelint-config-prettier-scss",
+    "stylelint-config-recommended-scss"
+  ],
+  "rules": {
+    "comment-no-empty": null,
+    "declaration-no-important": true,
+    "color-function-notation": "legacy",
+    "font-family-name-quotes": "always-where-recommended",
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["export", "global"]
+      }
+    ],
+    "color-format/format": {
+      "format": "hsla"
+    }
+  }
+}
