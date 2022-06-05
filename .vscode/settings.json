@@ -1,8 +1,4 @@
 {
-  "stylelint.packageManager": "yarn",
-  "stylelint.snippet": ["css", "sass", "scss"],
-  "stylelint.validate": ["css", "sass", "scss"],
-
   "prettier.configPath": ".prettierrc",
 
   "editor.bracketPairColorization.enabled": true,
@@ -12,5 +8,12 @@
   },
 
   "typescript.enablePromptUseWorkspaceTsdk": true,
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+
+  "stylelint.validate": ["css", "less", "postcss", "sass", "scss"],
+  "stylelint.snippet": ["css", "less", "postcss", "sass", "scss"],
+  "scss.lint.float": "error",
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
