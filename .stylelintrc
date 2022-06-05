@@ -1,14 +1,16 @@
 {
   "plugins": ["stylelint-scss", "stylelint-color-format"],
   "extends": [
-    "stylelint-config-prettier-scss",
-    "stylelint-config-recommended-scss"
+    "stylelint-config-standard-scss",
+    "stylelint-config-prettier-scss"
   ],
   "rules": {
+    "property-no-vendor-prefix": null,
     "comment-no-empty": null,
-    "declaration-no-important": true,
+    "color-no-invalid-hex": true,
     "color-function-notation": "legacy",
     "font-family-name-quotes": "always-where-recommended",
+    "max-empty-lines": 1,
     "selector-pseudo-class-no-unknown": [
       true,
       {
