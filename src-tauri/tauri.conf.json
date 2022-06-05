@@ -53,8 +53,8 @@
     },
     "windows": [
       {
-        "title": "Todo App",
-        "width": 800,
+        "title": "PickMe!",
+        "width": 1000,
         "height": 600,
         "resizable": true,
         "fullscreen": false

@@ -1,5 +1,5 @@
-@use "variables" as *;
-@use "../base/helpers" as *;
+@use 'variables' as *;
+@use '../base/helpers' as *;
 
 @mixin display-flex($content: center, $items: center, $direction: row) {
   display: flex;
@@ -9,7 +9,7 @@
 }
 
 @mixin element-invisible($enforce: true) {
-  $important: if($enforce, "!important", null);
+  $important: if($enforce, '!important', null);
 
   max-height: 0 #{$important};
   opacity: 0 #{$important};
@@ -18,7 +18,7 @@
 }
 
 @mixin element-invisible-off($value-visibility: 100px, $enforce: true) {
-  $important: if($enforce, "!important", null);
+  $important: if($enforce, '!important', null);
 
   max-height: #{$value-visibility} #{$important};
   opacity: 1 #{$important};
@@ -35,7 +35,7 @@
   $el-transition: none,
   $isVisible: true
 ) {
-  @if $element == "before" or $element == "after" {
+  @if $element == 'before' or $element == 'after' {
     position: relative;
 
     &:#{$element} {
@@ -73,7 +73,7 @@
       @content;
     }
   } @else {
-    @error "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+    @error "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "-
+        "Available breakpoints are: #{map-keys($breakpoints)}.";
   }
 }
